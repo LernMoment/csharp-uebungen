@@ -13,6 +13,9 @@ namespace BibliothekenIntegrieren_NLog
 
         static void Main(string[] args)
         {
+            logger.Info("Sample informational message");
+
+            Console.ReadLine();
         }
     }
 }
