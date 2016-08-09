@@ -39,12 +39,24 @@ Führe fogende Schritte aus, wenn du keine Idee hast, wie du die Übung angehen ka
  - [] Erstelle eine Konsolenanwendung
  - [] Suche auf [nuget.org](https://www.nuget.org) mit dem Stichwort `Log` nach Paketen die dich beim Logging unterstützen.
  - [] Für mich ist zum Beispiel der 2. Eintrag [NLog](https://www.nuget.org/packages/NLog) ansprechend. Dieses habe ich mir genauer angeschaut. (Ich habe beispielsweise [log4net](https://www.nuget.org/packages/log4net/) übersprungen, weil ich relevante Informationen auf der [Project Site](http://logging.apache.org/log4net/) nicht direkt finden konnte)
- - [] Über den Link *Project Site* von der [NLog Beschreibungsseite](https://www.nuget.org/packages/NLog) bin ich auf die [NLog-Seite](http://nlog-project.org) gekommen und fand es recht ansprechend.
- - [] Von der NLog-Projektseite bin ich zum [GitHub-Verzeichnis](https://github.com/NLog/NLog/) gekommen und habe dort auch das [Tutorial](https://github.com/NLog/NLog/wiki/Tutorial) gefunden.
- - [] Aus dem [Tutorial](https://github.com/NLog/NLog/wiki/Tutorial) konnte ich sehen wie ich eine Einfache Anwendung mit Logging erstelle und habe mich für diese Bibliothek entschieden.
+  - [] Über den Link *Project Site* von der [NLog Beschreibungsseite](https://www.nuget.org/packages/NLog) bin ich auf die [NLog-Seite](http://nlog-project.org) gekommen und fand es recht ansprechend.
+  - [] Von der NLog-Projektseite bin ich zum [GitHub-Verzeichnis](https://github.com/NLog/NLog/) gekommen und habe dort auch das [Tutorial](https://github.com/NLog/NLog/wiki/Tutorial) gefunden.
+  - [] Aus dem [Tutorial](https://github.com/NLog/NLog/wiki/Tutorial) konnte ich sehen wie ich eine Einfache Anwendung mit Logging erstelle und habe mich für diese Bibliothek entschieden.
  - [] Zur Installation von NLog gehst du im *Projektmappenexplorer* auf deine *Projektmappe* und wählst aus dem Kontextmenü *"NuGet Pakete für Projektmappe verwalten ..."* aus
  - [] Im sich öffnenden Dialog wählst du oben links *"Durchsuchen"* aus und suchst dann nach NLog. Bei mir ist das der erste Eintrag.
  - [] Sobald du das passende Paket ausgewählt hast, kannst du im mittleren Teil deines Fenster auswählen (Checkbox) für welches Projekt in deiner Projektmappe du NLog installieren möchtest. Hier wählst du entweder alle Projekte aus, oder nur die in denen du NLog benötigst. Da ich nur ein Projekt in meiner Projektmappe habe was das einfach ;).
  - [] Nun kannst du bei *"Version"* noch eine andere Version auswählen. Bei mir war die *"Aktuelleste Vorabversion"* ausgewählt. Diese habe ich getauscht gegen die *"Aktuelleste stabile Version"* und dann *"Installieren"* ausgewählt.
  - [] Nach der Installation hast du sowohl eine neue *"packages.config" in deinem Projekt wie auch einen neuen Verweis auf NLog.
- - [] Nun kannst du mit Hilfe des Tutorials einen `Logger` anlegen.
+ - [] Nun kannst du mit Hilfe des [Tutorials einen `Logger` anlegen](https://github.com/NLog/NLog/wiki/Tutorial#creating-loggers). Dazu brauchst du lediglich die Zeile `private static Logger logger = LogManager.GetCurrentClassLogger();` in deine Klasse `Program` schreiben und per `using` en entsprechenden `Namespace` einbinden.
+ - [] Der `Logger` alleine macht jedoch noch nichts. Daher zeigt das [Tutorial im Abschnitt Log-Messages](https://github.com/NLog/NLog/wiki/Tutorial#writing-log-messages) wie das geht.
+ - [] Auch jetzt wird allerdings noch immer kein Logfile erzeugt. Das liegt daran, dass NLog [eine Konfiguration benötigt](https://github.com/NLog/NLog/wiki/Tutorial#configuration). Dies ist jedoch schlecht im Tutorial beschrieben. Erstelle also eine Datei `NLog.config` über *"Hinzufügen -> Neues Element ..."* an deinem Projekt und nenne sie `NLog.config`.
+ - [] Nun wird es verwirrend, weil trotz der Datei kein Logfile erzeugt wird beim Starten der Anwendung. Dies liegt daran, dass die Datei `NLog.config` im Ausgabeverzeichnis benötigt wird, während die Anwendung ausgeführt wird. Wähle also im *Projektmappenexplorer* die Datei `NLog.config` aus und in den Eigenschaften stellst du den Eintrag *"In Ausgabeverzeichnis kopieren"* von `Nicht kopieren` auf `Immer kopieren`.
+
+**ERFOLG!**
+Du hast nun eine Anwendung die *NLog* verwendet, ein Logfile erstellt und auch eine Nachricht darein schreibt.
+
+Hast du nicht etwas vergessen? Denke daran, dass du nach der Übung reflektierst was dir die Übung gebracht hat und was du vielleicht beim nächsten mal besser, anders, ... machen kannst.
+
+Viel Spaß beim weiteren Üben, Lernen, Arbeiten oder auch einfach Feierabend machen
+
+Jan
