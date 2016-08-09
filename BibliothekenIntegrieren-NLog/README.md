@@ -18,7 +18,9 @@ Mit dieser Übung trainierst einerseits die praktische Verwendung der für dich wi
 
 ## Erweiterung der Übung für Fortgeschrittene
 
-Eine sehr gute Ergänzung dieser Übung ist die Verwendung von Git. Stelle also nach jedem Schritt sicher, dass deine Anwendung gestartet werden kann (auch wenn sie nichts macht. Wichtig ist nur, dass es keine Fehler/Warnungen vom Kompiler gibt) und mache dann einen Commit. ZUSATZ: Erstelle nicht nur einfach einen Commit, sondern überlege/recherchiere explizit wie eine gut Commit-Message aussieht und formuliere eine entsprechende Message für jeden Commit.
+Eine sehr gute Ergänzung dieser Übung ist die Verwendung von Git. Stelle also nach jedem Schritt sicher, dass deine Anwendung gestartet werden kann (auch wenn sie nichts macht. Wichtig ist nur, dass es keine Fehler/Warnungen vom Kompiler gibt) und mache dann einen Commit. 
+
+ZUSATZ: Erstelle nicht nur einfach einen Commit, sondern überlege/recherchiere explizit wie eine gut Commit-Message aussieht und formuliere eine entsprechende Message für jeden Commit.
 
 Mit dieser Ergänzung stellst du sicher, dass du in deiner Entwicklungsumgebung die Versionskontrolle bedienen kannst und das du alle wichtigen Informationen in eine Commit-Message bringst.
 
@@ -43,9 +45,9 @@ Führe fogende Schritte aus, wenn du keine Idee hast, wie du die Übung angehen ka
   - [ ] Von der NLog-Projektseite bin ich zum [GitHub-Verzeichnis](https://github.com/NLog/NLog/) gekommen und habe dort auch das [Tutorial](https://github.com/NLog/NLog/wiki/Tutorial) gefunden.
   - [ ] Aus dem [Tutorial](https://github.com/NLog/NLog/wiki/Tutorial) konnte ich sehen wie ich eine Einfache Anwendung mit Logging erstelle und habe mich für diese Bibliothek entschieden.
  - [ ] Zur Installation von NLog gehst du im *Projektmappenexplorer* auf deine *Projektmappe* und wählst aus dem Kontextmenü *"NuGet Pakete für Projektmappe verwalten ..."* aus
- - [ ] Im sich öffnenden Dialog wählst du oben links *"Durchsuchen"* aus und suchst dann nach NLog. Bei mir ist das der erste Eintrag.
- - [ ] Sobald du das passende Paket ausgewählt hast, kannst du im mittleren Teil deines Fenster auswählen (Checkbox) für welches Projekt in deiner Projektmappe du NLog installieren möchtest. Hier wählst du entweder alle Projekte aus, oder nur die in denen du NLog benötigst. Da ich nur ein Projekt in meiner Projektmappe habe was das einfach ;).
- - [ ] Nun kannst du bei *"Version"* noch eine andere Version auswählen. Bei mir war die *"Aktuelleste Vorabversion"* ausgewählt. Diese habe ich getauscht gegen die *"Aktuelleste stabile Version"* und dann *"Installieren"* ausgewählt.
+  - [ ] Im sich öffnenden Dialog wählst du oben links *"Durchsuchen"* aus und suchst dann nach NLog. Bei mir ist das der erste Eintrag.
+  - [ ] Sobald du das passende Paket ausgewählt hast, kannst du im mittleren Teil deines Fenster auswählen (Checkbox) für welches Projekt in deiner Projektmappe du NLog installieren möchtest. Hier wählst du entweder alle Projekte aus, oder nur die in denen du NLog benötigst. Da ich nur ein Projekt in meiner Projektmappe habe was das einfach ;).
+  - [ ] Nun kannst du bei *"Version"* noch eine andere Version auswählen. Bei mir war die *"Aktuelleste Vorabversion"* ausgewählt. Diese habe ich getauscht gegen die *"Aktuelleste stabile Version"* und dann *"Installieren"* ausgewählt.
  - [ ] Nach der Installation hast du sowohl eine neue *"packages.config" in deinem Projekt wie auch einen neuen Verweis auf NLog. In [diesem Commit](https://github.com/LernMoment/csharp-uebungen/commit/f8004190399e8a4956bbd33ffb0da19258ae45fc) siehst du was sich in meinem Projekt geändert hat.
  - [ ] Nun kannst du mit Hilfe des [Tutorials einen `Logger` anlegen](https://github.com/NLog/NLog/wiki/Tutorial#creating-loggers). Dazu brauchst du lediglich die Zeile `private static Logger logger = LogManager.GetCurrentClassLogger();` in deine Klasse `Program` schreiben und per `using` einen entsprechenden `Namespace` einbinden. Hier [mein Commit](https://github.com/LernMoment/csharp-uebungen/commit/2618dc4ea9c31c3111b044f1a73c1317df651c1f) dazu.
  - [ ] Der `Logger` alleine macht jedoch noch nichts. Daher zeigt das [Tutorial im Abschnitt Log-Messages](https://github.com/NLog/NLog/wiki/Tutorial#writing-log-messages) wie du eine Message in das Log schreiben kannst. Hier mein passendes [Commit](https://github.com/LernMoment/csharp-uebungen/commit/5c0f234192ea06c2d47ba0757cc6c3988517761d).
