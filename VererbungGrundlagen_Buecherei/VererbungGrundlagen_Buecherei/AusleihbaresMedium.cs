@@ -9,8 +9,9 @@ namespace VererbungGrundlagen_Buecherei
     public class AusleihbaresMedium
     {
         private bool istAusgeliehen = false;
-        // TODO: JS, was ist eine sinnvolle Initialisierung?
-        private DateTime ausgeliehenBis;
+        // Standardwert für DateTime ist 1/1/0001 12:00:00 AM was 
+        // DateTime.MinValue entspricht
+        private DateTime ausgeliehenBis = new DateTime();
 
         public bool KannAusgeliehenWerden(DateTime gewuenschtesAusleihDatum)
         {
