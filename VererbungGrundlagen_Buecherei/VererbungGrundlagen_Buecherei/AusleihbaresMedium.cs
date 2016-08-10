@@ -13,6 +13,15 @@ namespace VererbungGrundlagen_Buecherei
         // DateTime.MinValue entspricht
         private DateTime ausgeliehenBis = new DateTime();
 
+        public void LeiheAus(DateTime ausleiheEnde)
+        {
+            if (KannAusgeliehenWerden(ausleiheEnde))
+            {
+                istAusgeliehen = true;
+                ausgeliehenBis = ausleiheEnde;
+            }
+        }
+
         public bool KannAusgeliehenWerden(DateTime gewuenschtesAusleihDatum)
         {
             if (istAusgeliehen)
