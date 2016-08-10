@@ -10,18 +10,23 @@ namespace VererbungGrundlagen_Buecherei
     {
         static void Main(string[] args)
         {
-            Software unity = new Software();
-            DateTime ausleihEndeIn15Tagen = DateTime.Now.AddDays(15);
-            DateTime ausleihEndeIn6Tagen = DateTime.Now.AddDays(6);
+            List<AusleihbaresMedium> buecherei = new List<AusleihbaresMedium>();
+            Video einVideo = new Video();
 
-            if (unity.KannAusgeliehenWerden(ausleihEndeIn6Tagen))
-            {
-                Console.WriteLine("ERFOLG: Software kann für 6 Tage ausgeliehen werden.");
-            }
+            buecherei.Add(new Video());
+            buecherei.Add(einVideo);
+            buecherei.Add(new Software());
+            buecherei.Add(new Software());
 
-            if (!unity.KannAusgeliehenWerden(ausleihEndeIn15Tagen))
+            DateTime morgen = DateTime.Today.AddDays(1);
+            DateTime naechsteWoche = DateTime.Today.AddDays(8);
+            DateTime naechstenMonat = DateTime.Today.AddDays(35);
+
+            foreach (var medium in buecherei)
             {
-                Console.WriteLine("ERFOLG: Software kann nicht 15 Tage ausgeliehen werden.");
+                Console.WriteLine("Medium kann bis morgen ausgeliehen werden: " + medium.KannAusgeliehenWerden(morgen));
+                Console.WriteLine("Medium kann bis für 8 Tage ausgeliehen werden: " + medium.KannAusgeliehenWerden(naechsteWoche));
+                Console.WriteLine("Medium kann bis für 35 Tage ausgeliehen werden: " + medium.KannAusgeliehenWerden(naechstenMonat));
             }
 
             Console.ReadLine();
