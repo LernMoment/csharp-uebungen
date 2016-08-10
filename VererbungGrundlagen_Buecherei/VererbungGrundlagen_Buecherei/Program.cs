@@ -32,6 +32,15 @@ namespace VererbungGrundlagen_Buecherei
             {
                 Console.WriteLine("ERFOLG: Medium kann nicht für mehr als 30 Tage ausgeliehen werden.");
             }
+
+            // Video ausleihen
+            Video tollerFilm = new Video();
+            tollerFilm.LeiheAus(DateTime.Now.AddDays(20));
+            if (!tollerFilm.KannAusgeliehenWerden(DateTime.Now.AddDays(1)))
+            {
+                Console.WriteLine("ERFOLG: Film wurde ausgeliehen und kann nicht nochmals ausgeliehen werden.");
+            }
+
             Console.ReadLine();
         }
     }
