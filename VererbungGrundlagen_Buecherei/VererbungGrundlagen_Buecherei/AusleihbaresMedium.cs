@@ -8,7 +8,7 @@ namespace VererbungGrundlagen_Buecherei
 {
     public class AusleihbaresMedium
     {
-        private bool istAusgeliehen = false;
+        protected bool istAusgeliehen = false;
         // Standardwert für DateTime ist 1/1/0001 12:00:00 AM was 
         // DateTime.MinValue entspricht
         private DateTime ausgeliehenBis = new DateTime();
@@ -22,7 +22,7 @@ namespace VererbungGrundlagen_Buecherei
             }
         }
 
-        public bool KannAusgeliehenWerden(DateTime gewuenschtesAusleihDatum)
+        public virtual bool KannAusgeliehenWerden(DateTime gewuenschtesAusleihDatum)
         {
             if (istAusgeliehen)
             {
@@ -37,7 +37,7 @@ namespace VererbungGrundlagen_Buecherei
             return true;
         }
 
-        private double BerechneDifferenzInTagen(DateTime von, DateTime bis)
+        protected double BerechneDifferenzInTagen(DateTime von, DateTime bis)
         {
             TimeSpan differenz = bis.Subtract(von);
             return differenz.TotalDays;
