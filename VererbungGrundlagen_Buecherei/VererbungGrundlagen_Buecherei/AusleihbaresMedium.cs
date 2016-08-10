@@ -29,7 +29,7 @@ namespace VererbungGrundlagen_Buecherei
                 return false;
             }
 
-            if (BerechneDifferenzInTagen(DateTime.Now, gewuenschtesAusleihDatum) > 30)
+            if (BerechneDifferenzInTagen(DateTime.Now, gewuenschtesAusleihDatum) > 30.0)
             {
                 return false;
             }
@@ -37,10 +37,10 @@ namespace VererbungGrundlagen_Buecherei
             return true;
         }
 
-        private int BerechneDifferenzInTagen(DateTime von, DateTime bis)
+        private double BerechneDifferenzInTagen(DateTime von, DateTime bis)
         {
             TimeSpan differenz = bis.Subtract(von);
-            return differenz.Days;
+            return differenz.TotalDays;
         }
     }
 }
