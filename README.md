@@ -1,4 +1,4 @@
-# Übungen für Anfänger und Fortgeschrittene in C#
+# Übungen für Anfänger und Fortgeschrittene in CSharp
 
 Ein wesentlicher Bestandteil von effektivem Lernen ist das Üben. Dabei ist es wichtig, dass du Fertigkeiten fokussiert übst. Dazu findest du [hier](http://www.lernmoment.de/alle/ueben-mit-coding-katas/) ein paar mehr Informationen.
 
