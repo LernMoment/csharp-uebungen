@@ -30,11 +30,14 @@ namespace EinfachVerschluesselt
         private static string VerschluesselnMitRot13(string unverschluesselterText)
         {
             // Alles in Großbuchstaben konvertieren
+            string resultat;
+            resultat = unverschluesselterText.ToUpper();
+
             // Umlaute entfernen (normalisieren)
             // Zahlen und Sonderzeichen ignorieren
             // Alle Buchstaben um 13 Stellen verschieben
 
-            return "Verschlüsselung noch nicht implementiert!";
+            return resultat;
         }
     }
 }
