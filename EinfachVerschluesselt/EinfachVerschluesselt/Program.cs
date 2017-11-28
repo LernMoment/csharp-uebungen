@@ -42,9 +42,15 @@ namespace EinfachVerschluesselt
             // Zahlen und Sonderzeichen ignorieren
             // Alle Buchstaben um 13 Stellen verschieben
             char[] einzelneZeichen = resultat.ToCharArray();
-            int zeichen = Convert.ToUInt16(einzelneZeichen[0]) + 13;
 
-            resultat = Convert.ToChar(zeichen).ToString();
+            for (int i = 0; i < einzelneZeichen.Length; i++)
+            {
+                int zeichenAlsUnicode = Convert.ToUInt16(einzelneZeichen[i]);
+                einzelneZeichen[i] = Convert.ToChar(zeichenAlsUnicode + 13);
+            }
+
+            resultat = new string(einzelneZeichen);
+
             return resultat;
         }
     }
