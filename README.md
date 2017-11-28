@@ -10,6 +10,13 @@ Um dieses gezielte Üben geht es auch in den Projekten die ich dir in diesem Rep
 
 Bisher habe ich folgende Übungen für dich hier vorbereitet:
 
+### [Texte einfach verschlüsseln](https://github.com/LernMoment/csharp-uebungen/tree/master/EinfachVerschluesselt)
+Es geht darum, dass du einen eingegebenen Text mit der [ROT13](https://de.wikipedia.org/wiki/ROT13) Verschlüsselung bearbeitest.
+
+  - **Übungsfokus:** String, Kontrollstrukturen (for-Schleife, if-Abfrage), Problemlösung (vom Problem zum Code) 
+  - **Geschätzte Übungsdauer:** ca. 30-60 Minuten
+  - **Schwierigkeitsgrad:** *Einsteiger* & *Fortgeschrittene*
+
 ### [NLog via nuget integrieren](https://github.com/LernMoment/csharp-uebungen/tree/master/BibliothekenIntegrieren-NLog)
 Es geht darum, dass du in dein VisualStudio-Projekt die [NLog-Bibliothek](http://nlog-project.org) integrierst.
 
