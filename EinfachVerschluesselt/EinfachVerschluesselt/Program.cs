@@ -15,7 +15,7 @@ namespace EinfachVerschluesselt
             zuverschluesselnderText = Console.ReadLine();
 
             // Text verschlüsseln
-            string verschluesselterText = "Verschlüsselung noch nicht implementiert!";
+            string verschluesselterText = VerschluesselnMitRot13(zuverschluesselnderText);
 
             // verschlüsselten Text ausgeben
             Console.WriteLine();
@@ -25,6 +25,11 @@ namespace EinfachVerschluesselt
             // Warten bis der Benutzer das Programm beendet
             Console.WriteLine("Zum Beenden bitte 'Enter' drücken");
             Console.ReadLine();
+        }
+
+        private static string VerschluesselnMitRot13(string unverschluesselterText)
+        {
+            return "Verschlüsselung noch nicht implementiert!";
         }
     }
 }
