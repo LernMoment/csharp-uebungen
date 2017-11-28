@@ -46,7 +46,15 @@ namespace EinfachVerschluesselt
             for (int i = 0; i < einzelneZeichen.Length; i++)
             {
                 int zeichenAlsUnicode = Convert.ToUInt16(einzelneZeichen[i]);
-                einzelneZeichen[i] = Convert.ToChar(zeichenAlsUnicode + 13);
+                int verschluesseltesUnicode = zeichenAlsUnicode + 13;
+
+                // Nach Z kommt A!!!
+                int rest = verschluesseltesUnicode - 90;
+                if (rest > 0)
+                {
+                    verschluesseltesUnicode = 65 + (rest - 1);
+                }
+                einzelneZeichen[i] = Convert.ToChar(verschluesseltesUnicode);
             }
 
             resultat = new string(einzelneZeichen);
