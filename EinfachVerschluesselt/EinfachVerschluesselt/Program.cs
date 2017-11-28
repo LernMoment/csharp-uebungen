@@ -6,7 +6,7 @@ namespace EinfachVerschluesselt
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Text (unsicher) verschlüsseln mit ROT-13!");
         }
     }
 }
