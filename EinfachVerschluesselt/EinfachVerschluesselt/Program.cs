@@ -29,6 +29,11 @@ namespace EinfachVerschluesselt
 
         private static string VerschluesselnMitRot13(string unverschluesselterText)
         {
+            // Alles in Großbuchstaben konvertieren
+            // Umlaute entfernen (normalisieren)
+            // Zahlen und Sonderzeichen ignorieren
+            // Alle Buchstaben um 13 Stellen verschieben
+
             return "Verschlüsselung noch nicht implementiert!";
         }
     }
