@@ -34,6 +34,11 @@ namespace EinfachVerschluesselt
             resultat = unverschluesselterText.ToUpper();
 
             // Umlaute entfernen (normalisieren)
+            resultat = resultat.Replace("Ö", "OE");
+            resultat = resultat.Replace("Ä", "AE");
+            resultat = resultat.Replace("Ü", "UE");
+            resultat = resultat.Replace("ß", "SS");
+
             // Zahlen und Sonderzeichen ignorieren
             // Alle Buchstaben um 13 Stellen verschieben
 
