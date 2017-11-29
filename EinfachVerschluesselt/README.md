@@ -33,7 +33,7 @@ Mit folgenden Texten kannst du dein Programm überprüfen ob es richtig funktion
 | Ausgangstext | Verschlüsselter Text |
 | ------------ | -------------------- |
 | Hallo | UNYYB |
-| Es ist gerade 7:21 Uhr am Dienstag Morgen | RF VFG TRENQR 7:27 HUE NZ QVRAFGNT ZBETRA |
+| Es ist gerade 7:27 Uhr am Dienstag Morgen | RF VFG TRENQR 7:27 HUE NZ QVRAFGNT ZBETRA |
 | Übung macht besser ;-) | HROHAT ZNPUG ORFFRE ;-) |
 
 ## Tipps zur Lösung
