@@ -39,22 +39,25 @@ namespace EinfachVerschluesselt
             resultat = resultat.Replace("Ü", "UE");
             resultat = resultat.Replace("ß", "SS");
 
-            // Zahlen und Sonderzeichen ignorieren
             // Alle Buchstaben um 13 Stellen verschieben
             char[] einzelneZeichen = resultat.ToCharArray();
 
             for (int i = 0; i < einzelneZeichen.Length; i++)
             {
-                int zeichenAlsUnicode = Convert.ToUInt16(einzelneZeichen[i]);
-                int verschluesseltesUnicode = zeichenAlsUnicode + 13;
-
-                // Nach Z kommt A!!!
-                int rest = verschluesseltesUnicode - 90;
-                if (rest > 0)
+                // Zahlen und Sonderzeichen ignorieren
+                if (char.IsLetter(einzelneZeichen[i]))
                 {
-                    verschluesseltesUnicode = 65 + (rest - 1);
+                    int zeichenAlsUnicode = Convert.ToUInt16(einzelneZeichen[i]);
+                    int verschluesseltesUnicode = zeichenAlsUnicode + 13;
+
+                    // Nach Z kommt A!!!
+                    int rest = verschluesseltesUnicode - 90;
+                    if (rest > 0)
+                    {
+                        verschluesseltesUnicode = 65 + (rest - 1);
+                    }
+                    einzelneZeichen[i] = Convert.ToChar(verschluesseltesUnicode);
                 }
-                einzelneZeichen[i] = Convert.ToChar(verschluesseltesUnicode);
             }
 
             resultat = new string(einzelneZeichen);
