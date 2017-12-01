@@ -18,12 +18,13 @@ Diese Übung basiert auf der wunderbaren [Coding Kata "ROT-13"](http://ccd-schoo
 >  ROT13 ist nicht zur sicheren Verschlüsselung gedacht, es wird im Gegensatz dazu sogar oft als Beispiel für eine schwache, unsichere Verschlüsselung genannt. Vielmehr dient ROT13 dazu, einen Text unlesbar zu machen, also zu verschleiern, so dass eine Handlung des Lesers erforderlich ist, um den ursprünglichen Text lesen zu können.
 > -- [Wikipedia](https://de.wikipedia.org/wiki/ROT13)
 
-In dieser Übung geht es darum, dass du dem Anwender erlaubst einen beliebigen Text einzugeben und dieser dann entsprechend den folgenden Regeln (abgeleitet von der zugrundeliegenden [Coding Kata](http://ccd-school.de/coding-dojo/function-katas/rot-13/) - DANKE an Clean Code Developer School!) zu verschlüsselt und anschließend ausgegeben wird:
+In dieser Übung geht es darum, dass du dem Anwender erlaubst einen beliebigen Text einzugeben und dieser dann entsprechend den folgenden Regeln (abgeleitet von der zugrundeliegenden [Coding Kata](http://ccd-school.de/coding-dojo/function-katas/rot-13/) - DANKE an Clean Code Developer School!) verschlüsselt und anschließend ausgegeben wird:
 
  1. Es werden nur Buchstaben verschlüsselt (Zahlen und Sonderzeichen bleiben an gleicher Stelle erhalten)
- 2. Kleinbuchstaben werden vor ihrer Verschlüsselung in Großbuchstaben konvertiert (der verschlüsselte Text besteht also nur aus Großbuchstaben und verliert somit die Information über Groß- und Kleinschreibung)
-   1. Der Benutzer soll die Möglichkeit haben Großbuchstaben und Kleinbuchstaben einzugeben! Die Konvertierung in Großbuchstaben wird erst vor der Verschlüsselung durch geführt.
+ 2. Kleinbuchstaben werden vor ihrer Verschlüsselung in Großbuchstaben konvertiert (der verschlüsselte Text besteht also nur aus Großbuchstaben und verliert somit die Information über Groß- und Kleinschreibung). Der Benutzer soll die Möglichkeit haben Großbuchstaben und Kleinbuchstaben einzugeben! Die Konvertierung in Großbuchstaben wird erst vor der Verschlüsselung durch geführt.
  3. Umlaute werden "normalisiert". D.h. "ü" -> "UE", "ö" -> "OE", "ä" -> "AE", "ß" -> "SS"
+
+Verschlüsselt heißt dabei, dass jeder Buchstabe um 13 Stellen *"nach rechts"* verschoben wird (z.B. A -> N). Wird bei der Verschiebung das *Z* "passiert", dann wird wieder bei *A* angefangenen (z.B. O -> B).
 
 Bei der Umsetzung dieser Übung solltest du darauf achten, dass du dir die Übung in kleine einfache Schritte unterteilst und diese auch separat umsetzt. Der Fokus sollte (erstmal) darauf liegen eine funktionierende Lösung zu erstellen. Weitere Aspekte wie "gute" Objektorientierung, "sauberer" Quellcode, "tolle" Oberfläche bzw. Benutzerführung würde ich erstmal nicht beachten. Das sind alles Varianten in der du diese Übung nochmals ausführen kannst.
 
