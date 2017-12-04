@@ -40,4 +40,15 @@ Mit folgenden Texten kannst du dein Programm überprüfen ob es richtig funktion
 ## Tipps zur Lösung
 Gerade als Anfänger ist es manchmal schwer solche Aufgaben zu lösen, einfach weil es viel zu viel Unbekannte gibt. Daher möchte ich dir hier ein paar Tipps geben die du verwenden kannst, wenn du mit der Lösung der Übung nicht weiter kommst.
 
+### Tipp 1 - Fokus auf einzelne kleine Schritte
 
+Um die komplette Aufgabe lösen zu können, musst du unterschiedliche Teilaufgaben erledigen. Daher macht es Sinn, dass du diese Teilaufgaben identifizierst und dann jede einzelnd (und fokussiert) erledigst. Hier hinter steht das allgemeine Prinzip *"Teile und Herrsche"*. D.h. es geht einfacher, wenn du eine komplexe Aufgabe solange in einzelne Teilaufgaben unterteilst, bis jede Teilaufgabe *"einfach"* umzusetzen ist.
+
+Ich habe beispielsweise gesehen, dass ich die Übung in zwei Bereiche unterteilen kann:
+
+ 1. Interaktion mit dem Benutzer - hierbei geht es darum, dass ich den Text vom Benutzer erfrage, ihm den verschlüsselten Text anzeige und dann warte bis er die Anwendung beendet.
+ 2. Text verschlüsseln - dieses ist die eigentliche Aufgabe, welche wiederum aus weiteren Teilaufgaben besteht: Text in Großbuchstaben konvertieren, Umlaute "entfernen", Zahlen und Sonderzeichen ignorieren und schließlich alle Buchstaben um 13 Stellen verschieben.
+
+Nun kann ich die einzelnen Bereiche und Teilaufgaben komplett los gelöst von einander umsetzen. Das ist wichtig, damit ich mich immer nur auf einen kleinen Teil konzentrieren kann und mich nicht von anderen Teilaufgaben ablenken lasse.
+
+Damit ich das große Ganze im Auge behalte schreibe ich mir die einzelnen Schritte als Kommentare direkt in den Quelltext. Nun kann ich für jede Teilaufgabe unterhalb des entsprechenden Kommentars den passenden Quelltext schreiben. Damit habe ich nicht nur die Lösung und eine Dokumentation, sondern wenn ich später den Quelltext umstruktiere, kann ich anhand dieser Kommentare sehen wo potentielle Methoden sind.
