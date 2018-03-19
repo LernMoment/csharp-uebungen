@@ -1,6 +1,6 @@
 # Übungen für Anfänger und Fortgeschrittene in CSharp
 
-> **Coming Soon:** Übungskurs für Einsteiger!
+> **Übungskurs für Einsteiger:** [Hier findest du](https://www.udemy.com/csharp-uebungskurs-einfach-verschluesselt/?couponCode=GH-UROT-10) alle Details zu meinem neuen C# Übungskurs!
 
 Ein wesentlicher Bestandteil vom effektivem Lernen ist das Üben. Dabei ist es wichtig, dass du Fertigkeiten fokussiert übst. Dazu findest du [hier](http://www.lernmoment.de/alle/ueben-mit-coding-katas/) ein paar mehr Informationen.
 
@@ -10,7 +10,7 @@ Um dieses gezielte Üben geht es auch in den Projekten die ich dir in diesem Rep
 
 Bisher habe ich folgende Übungen für dich hier vorbereitet:
 
-### [Texte einfach verschlüsseln](https://github.com/LernMoment/csharp-uebungen/tree/master/EinfachVerschluesselt)
+### [Texte einfach verschlüsseln](https://github.com/LernMoment/csharp-einfach-verschluesselt)
 Es geht darum, dass du einen eingegebenen Text mit der [ROT13](https://de.wikipedia.org/wiki/ROT13) Verschlüsselung bearbeitest.
 
   - **Übungsfokus:** String, Kontrollstrukturen (for-Schleife, if-Abfrage), Problemlösung (vom Problem zum Code) 
