@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csharp-uebungskit", "csharp-uebungskit\csharp-uebungskit.csproj", "{A4E7F27A-1D7B-4C56-854E-9195D9F5D8ED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DerSpringendePunkt", "DerSpringendePunkt\DerSpringendePunkt.csproj", "{A4E7F27A-1D7B-4C56-854E-9195D9F5D8ED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
